@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="488.0" prefWidth="480.0" style="-fx-background-color: white; -fx-background-radius: 40px;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin.UpdateAccountPageController">
+   <children>
+      <Label layoutX="132.0" layoutY="14.0" prefHeight="46.0" prefWidth="210.0" text="Update Account" textFill="#3f4c6f">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </Label>
+      <Label layoutX="72.0" layoutY="120.0" prefHeight="46.0" prefWidth="143.0" text="User ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="164.0" prefHeight="46.0" prefWidth="163.0" text="Account Number">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="212.0" prefHeight="46.0" prefWidth="143.0" text="Username">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userIdTF" layoutX="188.0" layoutY="124.0" styleClass="textField" stylesheets="@../../css/admin.css" />
+      <TextField fx:id="accNumTF" layoutX="188.0" layoutY="170.0" styleClass="textField" stylesheets="@../../css/admin.css" />
+      <TextField fx:id="usernameTF" layoutX="188.0" layoutY="216.0" styleClass="textField" stylesheets="@../../css/admin.css" />
+      <Button fx:id="updateAccountBtn" layoutX="108.0" layoutY="411.0" mnemonicParsing="false" onAction="#updateAccount" prefHeight="25.0" prefWidth="119.0" styleClass="saveButton" stylesheets="@../../css/admin.css" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelBtn" layoutX="233.0" layoutY="411.0" mnemonicParsing="false" onAction="#cancelUpdate" prefHeight="25.0" prefWidth="119.0" styleClass="cancelButton" stylesheets="@../../css/admin.css" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="72.0" layoutY="258.0" prefHeight="46.0" prefWidth="143.0" text="Currency">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="304.0" prefHeight="46.0" prefWidth="143.0" text="Balance">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="currencyTF" layoutX="188.0" layoutY="265.0" styleClass="textField" stylesheets="@../../css/admin.css" />
+      <TextField fx:id="balanceTF" layoutX="188.0" layoutY="311.0" styleClass="textField" stylesheets="@../../css/admin.css" />
+   </children>
+</AnchorPane>
